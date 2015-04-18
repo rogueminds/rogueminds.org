@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Rogue Minds</title>
+  <meta name="description" content="Rogue Minds">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- lato from cdnjs.com -->
+  <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" type="text/css">
+  <!-- compiled-css --><% styles.forEach( function ( file ) { %>
+  <link href="<%= file %>" rel="stylesheet" type="text/css" /><% }); %>
+</head>
+<!-- v<%= version %> -->
+<body>
+  <!-- start-header -->
+  <div class="header_bg">
+    <div class="wrap">
+      <div class="header">
+        <div class="logo">
+          <a href="">Rogue <span>Minds</span></a>
+        </div>  
+        <div class="nav">
+          <ul>
+             <li class="active"><a href="#home" class="scroll">Home</a></li>
+             <li><a href="#about" class="scroll">About</a></li>
+             <li><a href="#contact" class="scroll">Contact</a></li>
+           <div class="clear"> </div>
+           </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <!-- end-header -->
+
+  <!-- start-slider -->
+  <div class="slider_bg">
+    <div class="wrap">
+      <div class="da-slide">
+        <h2><span>We Build</span>SUCCESS</h2>
+        <p>Let us work on your dreams and help you create a web presence, the right way.</p>
+        <a href="#contact" class="da-link scroll">Learnmore</a>
+        <a href="#contact" class="scroll"><span class="da-img"> </span> </a>
+      </div>
+    </div>
+  </div>
+  <!-- end-slider -->
+
+  <!-- start-about -->
+  <div class="about" id="about">
+    <div class="wrap">
+      <h2>About Us</h2>
+      <p> We are a team of web development experts, passionate about achieving your vision with an elite
+      level of quality and efficiency, by leveraging the industry standard best practices that we have
+      learned throughout our careers..</p>
+      <div class="about-grids">
+        <div class="grid">
+          <div class="dc_zoom_css">
+            <span class="roll_css6">
+              <div class="social">
+                <ul>
+                  <li><a class="sharefacebook" href="#"> </a> </li>
+                  <li><a class="sharetwitter" href="#"> </a> </li>
+                  <li><a class="sharetgoogle" href="#"> </a> </li>
+                  <li><a class="sharedrible" href="#"> </a> </li>
+                  <div class="clear"> </div>
+                </ul>
+              </div>
+            </span>
+            <img class="post-person" src="images/portrait.png">
+          </div>
+          <div class="desc">
+            <h3>Alex Raventos</h3>
+            <p>Lead Software Engineer</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Sed ut perspiciatis unde omnis iste natus error sit voluptatem,Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="dc_zoom_css">
+            <span class="roll_css6">
+              <div class="social">
+                <ul>
+                  <li><a class="sharefacebook" href="#"> </a> </li>
+                  <li><a class="sharetwitter" href="#"> </a> </li>
+                  <li><a class="sharetgoogle" href="#"> </a> </li>
+                  <li><a class="sharedrible" href="#"> </a> </li>
+                  <div class="clear"> </div>
+                </ul>
+              </div>
+            </span>
+            <img class="post-person" src="images/portrait.png">
+          </div>
+          <div class="desc">
+            <h3>Darien Cot</h3>
+            <p>Senior Software Engineer</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Sed ut perspiciatis unde omnis iste natus error sit voluptatem,Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="dc_zoom_css">
+            <span class="roll_css6">
+              <div class="social">
+                <ul>
+                  <li><a class="sharefacebook" href="#"> </a> </li>
+                  <li><a class="sharetwitter" href="#"> </a> </li>
+                  <li><a class="sharetgoogle" href="#"> </a> </li>
+                  <li><a class="sharedrible" href="#"> </a> </li>
+                  <div class="clear"> </div>
+                </ul>
+              </div>
+            </span>
+            <img class="post-person" src="images/portrait.png">
+          </div>
+          <div class="desc">
+            <h3>Rodolfo Puig</h3>
+            <p>Senior DevOps Engineer</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Sed ut perspiciatis unde omnis iste natus error sit voluptatem,Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+          </div>
+        </div>
+        <div class="clear"> </div>
+      </div>
+    </div>
+  </div>
+  <!-- end-about -->
+
+  <!-- start-contact -->
+  <div class="contact" id="contact">
+    <div class="wrap">
+      <h2>Contact Us</h2>
+      <h4>Speak to us, we might just be exactly what you were looking for.</h4>
+      <div class="section group">
+        <div class="col span_2_of_3">
+          <div class="contact-form">
+            <form method="post" action="#">
+              <input type="text" class="textbox" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" disabled>
+              <input type="text" class="textbox" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" disabled>
+              <div class="clear"> </div>
+              <div>
+                <textarea value="Your Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}" disabled>Message</textarea>
+              </div>
+              <span><input type="submit" class="" value="Submit" disabled></span>
+              <div class="clear"></div>
+            </form>
+          </div>
+        </div>
+        <div class="col span_1_of_3">
+          <div class="company_address">
+            <h5>INFORMATION</h5>
+            <ul class="list3">
+              <li>
+                <img src="images/location.png" alt=""/>
+                <div class="extra-wrap">
+                  <p>P.O. Box 133595</p>
+                  <p>Miami, Florida, USA</p>
+                </div>
+                <div class="clear"> </div>
+              </li>
+              
+              <li>
+                <img src="images/phone.png" alt=""/>
+                <div class="extra-wrap">
+                  <p>+1 (305) 741-4189</p>
+                </div>
+                <div class="clear"> </div>
+              </li>
+              <li>
+                <img src="images/mail.png" alt=""/>
+                <div class="extra-wrap">
+                  <p>info (at) rogueminds (dot) org</p>
+                </div>
+                <div class="clear"> </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <!-- end-contact -->
+
+  <!-- start-footer -->
+  <div class="footer-bottom">
+    <div class="wrap">
+      <div class="copy">
+        <p class="copy"><span>Rogue Minds, LLC</span> &#169 2015</p>
+      </div>
+    </div>
+  </div>
+  <!-- end-footer -->
+
+  <!-- compiled-js --><% scripts.forEach( function ( file ) { %>
+  <script src="<%= file %>" type="text/javascript"></script><% }); %>
+</body>
+</html>
