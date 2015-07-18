@@ -16,7 +16,7 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON("package.json"),
 
     meta: {
-      banner: 
+      banner:
         '/**\n' +
         ' * <%= pkg.name %> v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %>\n' +
         ' * <%= pkg.homepage %>\n' +
@@ -36,13 +36,13 @@ module.exports = function (grunt) {
     bump: {
       options: {
         files: [
-          "package.json", 
+          "package.json",
           "bower.json"
         ],
         commit: true,
         commitMessage: 'grunt-bump: v%VERSION%',
         commitFiles: [
-          "package.json", 
+          "package.json",
           "bower.json"
         ],
         createTag: true,
@@ -51,10 +51,10 @@ module.exports = function (grunt) {
         push: false,
         pushTo: 'origin'
       }
-    },    
+    },
 
-    clean: [ 
-      '<%= build_dir %>', 
+    clean: [
+      '<%= build_dir %>',
       '<%= compile_dir %>'
     ],
 
@@ -124,11 +124,11 @@ module.exports = function (grunt) {
         options: {
           banner: '<%= meta.banner %>'
         },
-        src: [ 
-          '<%= vendor_files.js %>', 
-          'module.prefix', 
+        src: [
+          '<%= vendor_files.js %>',
+          'module.prefix',
           '<%= build_dir %>/src/**/*.js',
-          'module.suffix' 
+          'module.suffix'
         ],
         dest: '<%= compile_dir %>/js/global-<%= pkg.version %>.js'
       },
@@ -183,7 +183,7 @@ module.exports = function (grunt) {
     },
 
     jshint: {
-      src: [ 
+      src: [
         '<%= app_files.js %>'
       ],
       gruntfile: [
@@ -234,7 +234,7 @@ module.exports = function (grunt) {
         livereload: true
       },
       coffeesrc: {
-        files: [ 
+        files: [
           '<%= app_files.coffee %>'
         ],
         tasks: [ 'coffeelint:src', 'coffee:source', 'copy:build_js' ]
@@ -247,7 +247,7 @@ module.exports = function (grunt) {
         }
       },
       jssrc: {
-        files: [ 
+        files: [
           '<%= app_files.js %>'
         ],
         tasks: [ 'jshint:src', 'copy:build_js' ]
@@ -275,7 +275,7 @@ module.exports = function (grunt) {
     'build', 'compile'
   ]);
   grunt.registerTask('build', [
-    'clean', 'coffeelint', 'coffee', 'less:build', 'concat:build_css', 
+    'clean', 'coffeelint', 'coffee', 'less:build', 'concat:build_css',
     'copy:build_js', 'copy:build_images', 'copy:build_vendorjs', 'copy:build_vendorcss',
     'index:build'
   ]);
@@ -292,7 +292,7 @@ module.exports = function (grunt) {
       return file.replace(dirRE, '');
     });
 
-    grunt.file.copy('src/index.html', this.data.dir + '/index.html', { 
+    grunt.file.copy('src/index.html', this.data.dir + '/index.html', {
       process: function (contents, path) {
         return grunt.template.process(contents, {
           data: {
